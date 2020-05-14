@@ -126,6 +126,48 @@ I *never* want whitespace at the end of lines. Remove it on save.
   (add-hook 'before-save-hook 'delete-trailing-whitespace)
 #+END_SRC
 
+
+** Org Mode Export Formats
+
+Export to JIRA
+
+#+BEGIN_SRC emacs-lisp
+  (use-package ox-jira)
+#+END_SRC
+
+
+HTML5 Slides
+
+#+BEGIN_SRC emacs-lisp
+  (use-package ox-html5slide)
+#+END_SRC
+
+
+Export also EPUB format
+
+#+BEGIN_SRC emacs-lisp
+  (use-package ox-epub)
+#+END_SRC
+
+
+Export TWBS
+
+#+BEGIN_SRC emacs-lisp
+  (use-package ox-twbs)
+#+END_SRC
+
+Exporter for =pandoc=
+
+#+BEGIN_SRC emacs-lisp
+  (use-package ox-pandoc)
+#+END_SRC
+
+Google IO Slides
+
+#+BEGIN_SRC emacs-lisp
+  (use-package ox-ioslide)
+#+END_SRC
+
 ** Goto last change
 
 Sometimes it's useful to step to the last changes in a buffer.
@@ -468,4 +510,4 @@ Rust is a zero-cost abstraction systems language.
 
 #+BEGIN_SRC emacs-lisp
   (use-package rust-mode)
-#+END_SRC
+#+END_S
